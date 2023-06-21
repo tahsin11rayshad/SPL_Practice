@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+.experience{
+    height: 220vh;
+    background-color:rgb(4, 10, 60);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+    gap: 2rem;
+}
+.experience .experience-row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.experience-row .experience-column{
+    flex: 1rem 1rem 40rem;
+}
+
+.experience-column .experience-title{
+    font-size: 2.5rem;
+    margin:0 0 1.5rem 2rem;
+    color: rgb(194, 108, 65);
+}
+
+.experience-column .experience-box{
+    border-left: .2rem solid #00abf0;
+}
+
+.experience-box .experience-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.experience-box .experience-content::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #00abf0;
+    border-radius: 50%;
+
+}
+
+.experience-content .econtent{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid #00abf0;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: .8s;
+}
+
+.experience-content .econtent::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: .8s;
+}
+.experience-content .econtent:hover::before{
+    width: 100%;
+}
+
+.exp-contentyb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.exp-buttonbox a{
+    display: inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 30px;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #00abf0;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .8s;
+}
+.exp-buttonbox a:hover{
+    color: rgb(3, 7, 40);
+}
+
+.exp-buttonbox a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: .8s;
+}
+.exp-buttonbox a:hover::before{
+    width: 100%;
+}
+
+.econtent h3{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(179,179,179);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.exp-contentyb .year{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.description{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.econtent h3 span{
+    color: yellow;
+}
